@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Caprasimo&family=Preahvihear&display=swap');
+      </style>
     <link rel="stylesheet" href="style.css">
     <title>Etch a sketch</title>
 </head>
 <body>
+    <BODY ondragstart="return false;" ondrop="return false;">
     <div class="container">
-        <h1>Etch a sketch</h1>
-        <div class="board"></div>
         <div class="inputs">
-            <form>
-                <label for="color">Choose a color</label>
-                <select name="color" id="color">
-                    <option value="black">black</option>
-                    <option value="blue">blue</option>
-                    <option value="red">red</option>
-                    <option value="yellow">yellow</option>
-                    <option value="brown">brown</option>
-                </select>
-                <label for="size">Grid size</label>
-                <input type="range" id="size" name="size" min="4" max="64" default = "16"/>
-            </form>
-            <button class="clear-btn">Clear</button>
+                <div class="input-title">Choose a color</div>
+                <div class="colors">
+                    <div class="color" id="black"></div>
+                    <div class="color" id="yellow"></div>
+                    <div class="color" id="red"></div>
+                    <div class="color" id="blue"></div>
+                    <div class="color" id="green"></div>
+                    <div class="color" id="pink"></div>
+                    <div class="color" id="purple"></div>
+                    <div class="color" id="orange"></div>
+                    <div class="color" id="brown"></div>
+                    <div class="color" id="white"></div>
+                </div>
+                <label class="input-title label" for="size">Grid size</label>
+                <input type="range" id="size" name="size" min="4" max="64" default = "16"/>            
+        </div>
+        <div class="playground">
+            <div class="playground-board">
+                <h1>Etch a sketch</h1>
+                <div class="board"></div>
+                <button class="clear-btn">Clear</button>
+            </div>
         </div>
     </div>
     
