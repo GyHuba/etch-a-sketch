@@ -1,25 +1,81 @@
-*{
+* {
     box-sizing: border-box;
+    font-family: 'Barriecito', cursive;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Preahvihear', sans-serif;
+    border: 0;
+    padding: 0;
 }
 
-.container{
+body {
+    background-image: url(./pexels-photo-479444.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playground {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.playground-board {
+    width: 680px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.board{
-    width: 680px;
-    height: 680px;
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.board {
     border: 3px solid darkred;
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
 }
 
+.color {
+    width: 2rem;
+    height: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
 
-.grid-cell{
+.playground-board h1{
+    margin-top: 0;
+}
+
+.input-title {
+    font-size: 24px;
+}
+
+.input-title.label{
+    margin-top: 2rem;
+}
+
+#size{
+    cursor: pointer;
+}
+
+.clear-btn{
+    margin-top: 0.5rem;
+    font-size: 24px;
+    padding: 0.5rem 1.5rem;
+    background-color: red;
     border: 1px solid black;
-}
-
-.active{
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
 }
