@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Caprasimo&family=Preahvihear&display=swap');
-      </style>
+    </style>
     <link rel="stylesheet" href="style.css">
     <title>Etch a sketch</title>
 </head>
+
 <body>
+
     <BODY ondragstart="return false;" ondrop="return false;">
-    <div class="container">
-        <div class="inputs">
+        <div class="container">
+            <div class="inputs">
                 <div class="input-title">Choose a color</div>
                 <div class="colors">
                     <div class="color" id="black"></div>
@@ -27,17 +30,18 @@
                     <div class="color" id="white"></div>
                 </div>
                 <label class="input-title label" for="size">Grid size</label>
-                <input type="range" id="size" name="size" min="4" max="64" default = "16"/>            
-        </div>
-        <div class="playground">
-            <div class="playground-board">
-                <h1>Etch a sketch</h1>
-                <div class="board"></div>
-                <button class="clear-btn">Clear</button>
+                <input type="range" id="size" name="size" min="4" max="64" default="16" />
+            </div>
+            <div class="playground">
+                <div class="playground-board">
+                    <h1>Etch a sketch</h1>
+                    <div class="board"></div>
+                    <button class="clear-btn">Clear</button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+
+        <script src="script.js"></script>
+    </body>
+
 </html>
