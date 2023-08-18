@@ -53,6 +53,10 @@ body {
     cursor: pointer;
 }
 
+#random-color{
+    background:linear-gradient(90deg, Red, Orange, Yellow, Green, Blue, Indigo,violet);
+}
+
 .playground-board h1 {
     margin-top: 0;
 }

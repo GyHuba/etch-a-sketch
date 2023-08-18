@@ -23,11 +23,20 @@ function buildTheGrid(size) {
     }
 }
 
+function randomizeNumbers(){
+    return `rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)})`
+}
+
 function drawing(event) {
     let gridElement = document.querySelector(`.${event.target.className}`);
     if (gridElement === null || gridElement.className === "board") return
     else if (gridElement !== null) {
-        gridElement.style.backgroundColor = `${color}`;
+        if(color === "random-color"){
+            gridElement.style.backgroundColor = `${randomizeNumbers()}`;
+        }
+        else{
+            gridElement.style.backgroundColor = `${color}`;
+        }
     }
 }
 
